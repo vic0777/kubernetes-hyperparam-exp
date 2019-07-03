@@ -77,8 +77,8 @@ def main():
     DATA_DIR = '/datasets/cifar10-data'
 
     #print('Downloading datasets')
-    train_set_raw = torchvision.datasets.CIFAR10(root=DATA_DIR, train=True, download=False)
-    test_set_raw = torchvision.datasets.CIFAR10(root=DATA_DIR, train=False, download=False)
+    train_set_raw = torchvision.datasets.CIFAR10(root=DATA_DIR, train=True, download=True)
+    test_set_raw = torchvision.datasets.CIFAR10(root=DATA_DIR, train=False, download=True)
     
     # Load hyperparameters
     hyperparams = get_hyperparameters(job_id)
