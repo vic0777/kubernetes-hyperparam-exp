@@ -34,8 +34,8 @@ spec:
           directory: .
       - name: cifar10-dataset
         nfs:
-          server: 10.110.114.22
-          path: /home/sprasanna/Projects/training-datasets
+          server: 39.106.67.247
+          path: /nfsshare/
       computeResources:
        - name: "nvidia-gpu"
          resources:
