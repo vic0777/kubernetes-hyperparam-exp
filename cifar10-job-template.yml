@@ -29,7 +29,7 @@ spec:
       volumes:
       - name: cifar10-training
         gitRepo:
-          repository: https://github.com/NVIDIA-developer-blog/kubernetes-hyperparam-exp.git
+          repository: https://github.com/vic0777/kubernetes-hyperparam-exp.git
           revision: master
           directory: .
       - name: cifar10-dataset
