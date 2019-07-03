@@ -20,7 +20,7 @@ spec:
            value: "$ITEM"
          command: ["bash"]
          args: ["-c","python cifar10_train.py"]
-         computeResourceRequests: ["nvidia-gpu"]
+         resources: ["nvidia-gpu"]
          volumeMounts:
          - name: cifar10-training
            mountPath: /cifar10-training
