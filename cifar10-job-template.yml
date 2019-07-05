@@ -24,8 +24,6 @@ spec:
            limits:
              nvidia.com/gpu: 1
          volumeMounts:
-         - name: cifar10-training
-           mountPath: /cifar10-training
          - name: cifar10-dataset
            mountPath: /datasets
       volumes:
