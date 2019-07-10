@@ -13,7 +13,7 @@ spec:
       restartPolicy: Never
       containers:
        - name: pytorch
-         image: registry.cn-beijing.aliyuncs.com/kingsoft_ai/pytorch_19.02-py3
+         image: registry.cn-hangzhou.aliyuncs.com/nvidia_gpu/pytorch:18.06-py3
          workingDir: /cifar10-training
          env:
          - name: JOB_ID
