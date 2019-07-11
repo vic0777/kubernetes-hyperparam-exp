@@ -25,3 +25,5 @@ Assuming you’ve already started by setting up a Kubernetes cluster, our soluti
 6. Submit multiple Kubernetes job requests using above specification template
 7. Analyze the results and pick the hyperparameter set
 
+
+**gitRepo volume has been deprecated (https://kubernetes.io/docs/concepts/storage/volumes/#gitrepo).To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod’s container.**
