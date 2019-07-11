@@ -1,5 +1,7 @@
 # Kubernetes for hyperparameter search experiments
 
+**gitRepo volume has been deprecated (https://kubernetes.io/docs/concepts/storage/volumes/#gitrepo).To provision a container with a git repo, mount a        n EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod’s container.**
+
 This repository contains code and config files that accompany the following blog post: **[Kubernetes for AI Hyperparameter Search Experiments](https://devblogs.nvidia.com/kubernetes-ai-hyperparameter-search-experiments)**
 
 Tested on Kubernetes version 1.10.11
@@ -24,6 +26,3 @@ Assuming you’ve already started by setting up a Kubernetes cluster, our soluti
 5. Specify Kubernetes Job specification files in YAML
 6. Submit multiple Kubernetes job requests using above specification template
 7. Analyze the results and pick the hyperparameter set
-
-
-**gitRepo volume has been deprecated (https://kubernetes.io/docs/concepts/storage/volumes/#gitrepo).To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod’s container.**
