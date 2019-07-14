@@ -2,6 +2,13 @@
 
 **gitRepo volume has been deprecated (https://kubernetes.io/docs/concepts/storage/volumes/#gitrepo).To provision a container with a git repo, mount a        n EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod’s container.**
 
+
+**Dependencies:**
+pytorch:0.4.1
+torchvision:0.2.1
+PyYAML:5.1.1
+
+
 This repository contains code and config files that accompany the following blog post: **[Kubernetes for AI Hyperparameter Search Experiments](https://devblogs.nvidia.com/kubernetes-ai-hyperparameter-search-experiments)**
 
 Tested on Kubernetes version 1.10.11
